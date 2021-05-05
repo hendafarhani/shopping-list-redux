@@ -2,9 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.6.
 
-This project allows to iterate through shopping items and add them to my-basket list. 
-Each time a shopping item is selected it is added to my-basket list and number of elements is incremented in my-basket component. 
-In case the selected element is already added, my-basket component will increment the number of the item to tell the user how many articles he has selected of the same items.
+This project allows to iterate through shopping items and add them to my-basket list.  <br />
+Each time a shopping item is selected it is added to my-basket list and number of elements is incremented in my-basket component. <br />
+In case the selected element is already added, my-basket component will increment the number of times the same item is selected. <br />
 Components don't communicate with each others. They get their states from the global store. 
 
 ## Development server
