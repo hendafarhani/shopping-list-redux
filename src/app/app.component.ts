@@ -1,14 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
-import { v4 as uuid } from 'uuid';
-import {
-  AddItemAction,
-  DeleteItemAction,
-  LoadItemAction,
-} from './store/actions/shopping.action';
-import { AppState } from './store/models/app-state.model';
-import { ShoppingItem } from './store/models/shopping-item.model';
+import { MyBasketListFacadeService } from './facades/my-basket/my-basket-list-facade.service';
+import { ShoppingListFacadeService } from './facades/shopping/shopping-list-facade.service';
+import { AppState } from './store/state/app-state.model';
+import { MyBasketItem } from './store/state/my-basket/my-basket-item.models';
+import { ShoppingItem } from './store/state/shopping/shopping-item.model';
 
 @Component({
   selector: 'app-root',
@@ -17,29 +14,24 @@ import { ShoppingItem } from './store/models/shopping-item.model';
 })
 export class AppComponent implements OnInit {
   title = 'ngrx-shopping-list';
-  shoppingItems: Observable<Array<ShoppingItem>>;
+
+  shoppingItems$: Observable<Array<ShoppingItem>>;
+  myBasketItems$: Observable<Array<MyBasketItem>>;
   loading$: Observable<boolean>;
   error$: Observable<Error>;
-  itemNumbers$: Observable<Number>;
 
-  newShoppingItem: ShoppingItem = { id: uuid(), name: 'kljlkdjf' };
-
-  constructor(private store: Store<AppState>) {}
+  constructor(
+    private store: Store<AppState>,
+    private shoppingListFacade: ShoppingListFacadeService,
+    private myBasketListFacade: MyBasketListFacadeService
+  ) {}
 
   ngOnInit(): void {
-    //We need to create a selector
-    this.shoppingItems = this.store.select((store) => store.shopping.list);
-    this.itemNumbers$ = this.store.select(
-      (store) => store.shopping.list.length
-    );
-    this.loading$ = this.store.select((store) => store.shopping.loading);
-    this.error$ = this.store.select((store) => store.shopping.error);
-    this.store.dispatch(new LoadItemAction(undefined));
+    this.shoppingItems$ = this.shoppingListFacade.getShoppingItems();
+    this.myBasketItems$ = this.myBasketListFacade.getMyBasketItems();
+    this.loading$ = this.shoppingListFacade.isLoading();
+    this.error$ = this.shoppingListFacade.getError();
+    this.shoppingListFacade.loadShoppingItems();
+    this.myBasketListFacade.loadMyBasketItems();
   }
-
-  addItem() {
-    this.store.dispatch(new AddItemAction(this.newShoppingItem));
-  }
-
-  deleteItem(id: string) {}
 }

@@ -1,84 +1,28 @@
 {
   "shopping": [
     {
-      "id": "1",
-      "name": "pepsi"
-    },
-    {
-      "id": "29a8f25c-46e4-4194-8357-bd221f84cd31",
-      "name": "fsdf"
-    },
-    {
-      "id": "2a3e53ab-81de-46b9-9c4e-dc3d3073cf42",
-      "name": "oipoipo"
-    },
-    {
-      "id": "2",
-      "name": "sdfsdf"
-    },
-    {
-      "id": "3",
-      "name": "sdfsdf"
-    },
-    {
-      "id": "4",
-      "name": "dsfsfdf"
-    },
-    {
-      "id": "5",
-      "name": "fslkfkdsf"
-    },
-    {
-      "id": "f84c7a37-cf9f-4466-9a44-af0ec631caaa",
-      "name": "qsdsdqs"
-    },
-    {
-      "id": "826709d5-3f4a-4a46-a408-eae2b3f9742c",
-      "name": "kljlkdjf"
-    },
-    {
-      "id": "30996e45-0fb0-4da3-b57b-ec4442a4fc82",
-      "name": "kljlkdjf"
-    },
-    {
-      "id": "dd3d1330-9431-4e9a-8916-0e191388f52b",
-      "name": "kljlkdjf"
-    },
-    {
-      "id": "425bde2f-11ef-47da-88a4-ffa39d42f0e1",
-      "name": "kljlkdjf"
-    },
-    {
-      "id": "f4f4531c-db07-4e00-8a8f-f8bff186a5b9",
-      "name": "kljlkdjf"
-    },
-    {
       "id": "44c437d1-1902-4e2d-860a-0a23d8752b0b",
-      "name": ""
+      "name": "First item"
     },
     {
-      "id": "80532ef4-75ed-4f4e-aec5-f15485fcbbdb",
-      "name": "kljlkdjf"
+      "id": "44c437d1-1902-4e2d-860a",
+      "name": "Second item"
     },
     {
-      "id": "3b595018-43ff-494a-a49c-b44f5f03e44c",
-      "name": "kljlkdjf"
+      "id": "44c437d1-1902-4e2d-860aB",
+      "name": "Third item"
     },
     {
-      "id": "923334b2-976c-45fa-8a1f-65d953bb5e4b",
-      "name": "kljlkdjf"
+      "id": "44c437d1-1902-4e2d-860al",
+      "name": "Forth item"
     },
     {
-      "id": "c12cc5e4-f448-427e-a743-a38c91a99fcd",
-      "name": "kljlkdjf"
+      "id": "14c437d1-1902-4e2d-860at",
+      "name": "Fifth item"
     },
     {
-      "id": "9fa87d42-bc1e-4ade-bccc-b1d57c8cfac8",
-      "name": "kljlkdjf"
-    },
-    {
-      "id": "6ae80855-67c5-48dc-98f9-f09d120d68c1",
-      "name": "kljlkdjf"
+      "id": "34c437d1-1902-4e2d-860aG",
+      "name": "Sixth item"
     }
   ]
 }

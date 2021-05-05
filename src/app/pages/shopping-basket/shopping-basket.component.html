@@ -1,0 +1,16 @@
+
+<button (mouseover)="display = true" (mouseout)="display = false">
+    {{itemNumbers$ | async}}
+</button>
+<div *ngIf="display">
+
+    <div *ngFor="let item of myBasketItems | async; let i = index">
+        <span>
+            {{item.name}}
+        </span>
+        <span>
+            {{item.numberSelection}}
+        </span>
+    </div>
+</div>
+    

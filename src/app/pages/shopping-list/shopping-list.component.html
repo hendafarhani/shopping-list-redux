@@ -1,0 +1,30 @@
+<ng-template #error>
+  <h2>{{ (error$ | async)?.message }}</h2>
+</ng-template>
+
+
+<div id="wrapper">
+    <div
+      [class.loading]="loading$ | async"
+      id="shopping-list"
+      *ngIf="!(error$ | async); else error"
+    >
+      <div id="list">
+        <div class="container">
+          <div *ngFor="let shoppingItem of shoppingItems | async; let i = index">
+            <app-card-item [shoppingItem]="shoppingItem" (itemAdded)="addItemToBasket($event)" ></app-card-item>
+          </div>
+        </div>
+
+        <ng-template #noItems>
+          <ul>
+            <li style="max-width: 250px; margin: 0 auto">
+              No items found. Are you sure there's <em>nothing</em> you want?
+            </li>
+          </ul>
+        </ng-template>
+      </div>
+  
+    </div>
+  </div>
+  
