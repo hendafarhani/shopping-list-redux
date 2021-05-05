@@ -63,7 +63,7 @@ Shopping class, to be stored in shopping state. <br />
 Shopping state and my-basket state that constitute the store. <br />
 
 - ### db.json: 
-This project is using a fake backend. It stores and loads shopping items from db.json. For this purpose JSON serve is installed. <br />
+This project is using a fake backend. It stores and loads shopping items from db.json. For this purpose JSON server is installed. <br />
 `npm i json-server` : command to install this server. <br />
 `json-server –watch db.json` : to start JSON server. <br />
 https://www.npmjs.com/package/json-server : For further information.
