@@ -19,12 +19,12 @@ The app will automatically reload if you change any of the source files.
 
 - ### src/app/pages: <br />
 Module for components displayed in the web page: <br />
-     - #### card-item: 
-      Builds shopping item. <br />
-		  #### shopping-basket: 
-      Displays shopping items selected by user. <br />
-		  #### shopping-list:
-      Displays list of shopping items to select. <br />
+- #### card-item: 
+Builds shopping item. <br />
+- #### shopping-basket: 
+Displays shopping items selected by user. <br />
+#### shopping-list:
+   Displays list of shopping items to select. <br />
 - ### src/app/facades: <br />
 Manages application’s store: <br />
   		#### my-basket/my-basket-list-facade.service.ts:
