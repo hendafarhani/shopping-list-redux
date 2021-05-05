@@ -32,22 +32,32 @@ Services to for HTTP calls: <br />
 ### src/app/store: <br />
 Essential elements to apply redux design pattern: <br />
    #### *store/actions:  <br />
-→ my-basket/my-basket.action.ts: Contains load, create and update actions for my-basket state. <br />
-→ shopping/shopping.action.ts: Contains load actions for shopping state. <br />
+##### my-basket/my-basket.action.ts: 
+Contains load, create and update actions for my-basket state. <br />
+##### shopping/shopping.action.ts: 
+Contains load actions for shopping state. <br />
   #### *store/effects:  <br />
-→ shopping/shopping-effects.ts: Loads shopping items from database. <br />
+##### shopping/shopping-effects.ts: 
+Loads shopping items from database. <br />
   #### *store/reducers: <br />
-→ my-basket/my-basket-reducer.ts: Handle load, create and update actions for my-basket state.<br />
-→ shopping/shopping-reducer.ts: Handle load action for shopping state.<br />
+##### my-basket/my-basket-reducer.ts: 
+Handle load, create and update actions for my-basket state.<br />
+##### shopping/shopping-reducer.ts: 
+Handle load action for shopping state.<br />
   #### *store/selectors: <br />
-→ my-basket/my-basket.selector.ts: Contains selectors to load my-basket items, count them and count occurrences of a particular element in my-basket state. <br />
-→ shopping/shopping.selector.ts: Contains selector to load shopping items. <br />
+##### my-basket/my-basket.selector.ts: 
+Contains selectors to load my-basket items, count them and count occurrences of a particular element in my-basket state. <br />
+##### shopping/shopping.selector.ts:
+Contains selector to load shopping items. <br />
   #### *store/state: <br />
-→ my-basket/my-basket-item.models.ts: My-basket class, to be stored in my-basket state. <br />
-→ shopping/shopping-item.model.ts: Shopping class, to be stored in shopping state. <br />
+##### my-basket/my-basket-item.models.ts: 
+My-basket class, to be stored in my-basket state. <br />
+##### shopping/shopping-item.model.ts:
+Shopping class, to be stored in shopping state. <br />
   #### *app-state.model.ts: Shopping state and my-basket state that constitute the store. <br />
 
-### db.json: This project is using a fake backend to store and load shopping items from db.json. <br />
+### db.json: 
+This project is using a fake backend to store and load shopping items from db.json. <br />
 For this purpose JSON serve is installed. <br />
 `npm i json-server` : command to install this server. <br />
 `json-server –watch db.json` : to start JSON server. <br />
