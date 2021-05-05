@@ -17,21 +17,27 @@ The app will automatically reload if you change any of the source files.
 
 ## Project structure
 
-### src/app/pages: <br />
+- ### src/app/pages: <br />
 Module for components displayed in the web page: <br />
-      card-item: Builds shopping item. <br />
-		  shopping-basket: Displays shopping items selected by user. <br />
-		  shopping-list: Displays list of shopping items to select. <br />
-### src/app/facades: <br />
+      #### card-item: 
+      Builds shopping item. <br />
+		  #### shopping-basket: 
+      Displays shopping items selected by user. <br />
+		  #### shopping-list:
+      Displays list of shopping items to select. <br />
+- ### src/app/facades: <br />
 Manages application’s store: <br />
-  		my-basket/my-basket-list-facade.service.ts: Manages my-basket state. <br />
-	  	shopping/shopping-list-facade.service.ts: Manages shopping state.  <br />
-### src/app/services: <br />
+  		#### my-basket/my-basket-list-facade.service.ts:
+      Manages my-basket state. <br />
+	  	#### shopping/shopping-list-facade.service.ts: 
+      Manages shopping state.  <br />
+- ### src/app/services: <br />
 Services to for HTTP calls: <br />
-  		shopping/shopping.service.ts: Service to retrieve shopping items. <br />
-### src/app/store: <br />
+  		#### shopping/shopping.service.ts:
+      Service to retrieve shopping items. <br />
+- ### src/app/store: <br />
 Essential elements to apply redux design pattern: <br />
-   #### *store/actions:  <br />
+  - #### *store/actions:  <br />
 ##### my-basket/my-basket.action.ts: 
 Contains load, create and update actions for my-basket state. <br />
 ##### shopping/shopping.action.ts: 
