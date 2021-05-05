@@ -19,7 +19,7 @@ The app will automatically reload if you change any of the source files.
 
 - ### src/app/pages: <br />
 Module for components displayed in the web page: <br />
-      #### card-item: 
+     - #### card-item: 
       Builds shopping item. <br />
 		  #### shopping-basket: 
       Displays shopping items selected by user. <br />
