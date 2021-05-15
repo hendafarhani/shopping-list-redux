@@ -1,6 +1,6 @@
 # NgrxShoppingList
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.6.
+This project was developed with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.6.
 This project allows displaying shopping items that the user can add them to my-basket list. <br />
 In case the user selects the same item multiple times, the component which displays my-basket list will update the number of occurrences of this item. <br />
 Both Components displaying shopping items and my-basket items don't communicate with each other instead they get their states from the global store. <br />
